@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import dynamic from "next/dynamic";
 import { TAX_TYPE } from "@/libs/constants";
+import Link from "next/link";
 
 const Animated = dynamic(() => import("react-animated-numbers"), {
   ssr: false,
@@ -31,130 +32,86 @@ export default function Home() {
     <main>
       <Header />
 
-      <section className="bg-white dark:bg-gray-900 flex flex-col justify-start md:justify-center items-center">
-        <div className="w-full my-5 flex flex-col justify-center items-center p-5 space-y-10">
-          <div className="flex flex-row text-black text-center dark:text-white text-2xl md:text-5xl">
-            Your <span className="text-primary-700 font-bold">&nbsp;£</span>
-            <span className="text-primary-700 font-bold">
-              <Animated
-                animateToNumber={amount}
-                configs={[
-                  { mass: 1, tension: 220, friction: 100 },
-                  { mass: 1, tension: 180, friction: 130 },
-                  { mass: 1, tension: 280, friction: 90 },
-                ]}
-              ></Animated>
-            </span>
-            &nbsp;tax claim starts here
-          </div>
-          <div className="w-full flex flex-row justify-center items-center flex-wrap gap-5">
-            <button
-              className={`inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center  ${
-                type == TAX_TYPE.LAST_YEAR
-                  ? "bg-primary-700 hover:bg-primary-800 text-white rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-                  : "text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-              }`}
-              onClick={() => setType(TAX_TYPE.LAST_YEAR)}
-            >
-              2020 - 21
-            </button>
-            <button
-              className={`inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center  ${
-                type == TAX_TYPE.CURRENT_YEAR
-                  ? "bg-primary-700 hover:bg-primary-800 text-white rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-                  : "text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-              }`}
-              onClick={() => setType(TAX_TYPE.CURRENT_YEAR)}
-            >
-              2021 - 22
-            </button>
-            <button
-              className={`inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center  ${
-                type == TAX_TYPE.BOTH
-                  ? "bg-primary-700 hover:bg-primary-800 text-white rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-                  : "text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-              }`}
-              onClick={() => setType(TAX_TYPE.BOTH)}
-            >
-              Both
-            </button>
-          </div>
-        </div>
+      <section className="bg-primary-700 flex flex-col justify-start md:justify-center items-center">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
-              A hackable&nbsp;
-              <span className="text-primary-600 dark:text-primary-500">
-                text editor
+            <h1 className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl xl:text-6xl dark:text-white">
+              Your&nbsp;
+              <span className="text-yellow-200">£&nbsp;</span>
+              <span className="text-yellow-200">
+                <Animated
+                  animateToNumber={amount}
+                  configs={[
+                    { mass: 1, tension: 220, friction: 100 },
+                    { mass: 1, tension: 180, friction: 130 },
+                    { mass: 1, tension: 280, friction: 90 },
+                  ]}
+                ></Animated>
               </span>
-              &nbsp; for the 21st Century
+              &nbsp;tax claim starts here
             </h1>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-10 md:text-lg lg:text-xl dark:text-gray-400">
-              Here at flowbite we focus on markets where technology, innovation,
-              and capital can unlock long-term value.
+            <p className="max-w-2xl mb-1 font-light text-gray-300 md:text-lg lg:text-xl dark:text-gray-300">
+              Have you worked from home for a single day or more during the
+              pandemic?
             </p>
-            <div className="items-center justify-between p-4 mb-4 space-y-4 bg-gray-100 rounded dark:bg-gray-700 sm:flex sm:space-y-0">
-              <div>
-                <div className="text-2xl font-bold text-gray-900 dark:text-white">
-                  1.60.0
-                </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">
-                  Release notes
-                </div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-gray-900 dark:text-white">
-                  macOS
-                </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">
-                  For macOS 10.10 or later
-                </div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Windows
-                </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">
-                  For windows 7 or later
-                </div>
-              </div>
-              <a
-                href="#"
-                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+            <p className="max-w-2xl mb-1 font-light text-yellow-200 lg:mb-2 text-xs dark:text-yellow-200">
+              Select which year you worked a day or more from home. If you
+              worked from home during both years, select &apos;Both&apos;
+            </p>
+            <div className="flex justify-center items-center md:justify-start space-x-2 p-4 mb-4">
+              <button
+                className={`inline-flex items-center justify-center px-5 py-5 text-lg font-medium text-center ${
+                  type == TAX_TYPE.LAST_YEAR
+                    ? "bg-primary-900 text-white rounded-lg ring-0 focus:ring-0"
+                    : "bg-gray-50 hover:bg-gray-200 text-black rounded-lg ring-0 focus:ring-0"
+                }`}
+                onClick={() => setType(TAX_TYPE.LAST_YEAR)}
               >
-                <svg
-                  className="w-5 h-5 mr-2 -ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                  ></path>
-                </svg>
-                Download
-              </a>
+                2020 - 21
+              </button>
+              <button
+                className={`inline-flex items-center justify-center px-5 py-5 text-lg font-medium text-center ${
+                  type == TAX_TYPE.CURRENT_YEAR
+                    ? "bg-primary-900 text-white rounded-lg ring-0 focus:ring-0"
+                    : "bg-gray-50 hover:bg-gray-200 text-black rounded-lg ring-0 focus:ring-0"
+                }`}
+                onClick={() => setType(TAX_TYPE.CURRENT_YEAR)}
+              >
+                2021 - 22
+              </button>
+              <button
+                className={`inline-flex items-center justify-center px-5 py-5 text-lg font-medium text-center ${
+                  type == TAX_TYPE.BOTH
+                    ? "bg-primary-900 text-white rounded-lg ring-0 focus:ring-0"
+                    : "bg-gray-50 hover:bg-gray-200 text-black rounded-lg ring-0 focus:ring-0"
+                }`}
+                onClick={() => setType(TAX_TYPE.BOTH)}
+              >
+                Both
+              </button>
             </div>
-            <div className="text-sm text-gray-500">
-              By using Flowbite, you agree to its&nbsp;
-              <a
-                href="#"
-                className="text-primary-600 dark:text-primary-500 hover:underline"
-              >
-                license
-              </a>
-              &nbsp; and&nbsp;
-              <a
-                href="#"
-                className="text-primary-600 dark:text-primary-500 hover:underline"
-              >
-                privacy statement
-              </a>
-              .
+            <div className="w-full flex items-center justify-center md:justify-start p-0 md:p-4 mb-4">
+              <Link href="/claim">
+                <button
+                  className={`inline-flex items-center justify-center px-10 md:px-14 py-7 text-3xl font-semibold text-center bg-[#25D0BC] hover:bg-[#1bb6a4] text-white rounded-lg ring-0 focus:ring-0 transition-all duration-300`}
+                  onClick={() => {}}
+                >
+                  Check my claim&nbsp;
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    fill="currentColor"
+                    className="bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </button>
+              </Link>
             </div>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
@@ -327,36 +284,30 @@ export default function Home() {
       <section className="bg-white dark:bg-gray-900">
         <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
           <figure className="max-w-screen-md mx-auto">
-            <svg
-              className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
-              viewBox="0 0 24 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                fill="currentColor"
+            <div className="flex flex-col justify-center items-center space-y-4 mb-5">
+              <img
+                className="w-32 h-32 rounded-full ring-4 ring-gray-300 dark:ring-gray-500"
+                src="/reviewer-photo.jpg"
+                alt="profile picture"
               />
-            </svg>
+              <img
+                className="w-32"
+                src="/reviews-logo.png"
+                alt="review picture"
+              />
+            </div>
             <blockquote>
               <p className="text-2xl font-medium text-gray-900 dark:text-white">
-                &quot;Flowbite is just awesome. It contains tons of predesigned
-                components and pages starting from login screen to complex
-                dashboard. Perfect choice for your next SaaS application.&quot;
+                &quot;Very speedy response & questions easy to answer; form
+                really did take just 3 minutes to complete which won&apos;t
+                break the bank but might just earn you some cash to put in
+                it.&quot;
               </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
-              <img
-                className="w-6 h-6 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-                alt="profile picture"
-              />
               <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                <div className="pr-3 font-medium text-gray-900 dark:text-white">
-                  Micheal Gough
-                </div>
-                <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
-                  CEO at Google
+                <div className="pl-3 text-sm font-light text-gray-900 dark:text-white">
+                  - S from reviews.io
                 </div>
               </div>
             </figcaption>
@@ -383,8 +334,8 @@ export default function Home() {
               className="inline-flex justify-between items-center p-5 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <div className="block">
-                <div className="w-full text-lg font-semibold">0-50 MB</div>
-                <div className="w-full">Good for small websites</div>
+                <div className="w-full text-lg font-semibold">$ 20</div>
+                <div className="w-full">Good for a month</div>
               </div>
               <svg
                 aria-hidden="true"
@@ -414,8 +365,8 @@ export default function Home() {
               className="inline-flex justify-between items-center p-5 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <div className="block">
-                <div className="w-full text-lg font-semibold">500-1000 MB</div>
-                <div className="w-full">Good for large websites</div>
+                <div className="w-full text-lg font-semibold">$ 200</div>
+                <div className="w-full">Good for a year</div>
               </div>
               <svg
                 aria-hidden="true"

@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="p-4 bg-gray-100 md:p-8 lg:p-10 dark:bg-gray-800">
+    <footer className="p-4 bg-primary-700 border-gray-100 md:p-8 lg:p-10">
       <div className="mx-auto max-w-screen-xl text-center">
         <Link
           href="/"
-          className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
+          className="flex justify-center items-center text-2xl font-semibold text-white"
         >
           <svg
             className="mr-2 h-8"
@@ -154,7 +154,7 @@ const Footer = () => {
           </svg>
           ClaimingMadeEasy™
         </Link>
-        <p className="my-6 max-w-2xl mx-auto text-gray-500 dark:text-gray-400">
+        <p className="my-6 max-w-2xl mx-auto text-gray-200">
           ClaimingMadeEasy is a trading style of Approved Claims Group Ltd |
           Registered in England and Wales, Company Number: 12552579 | Registered
           Office: 20-22 Wenlock Road, London N1 7GU | VAT Number 358197753 | ICO
@@ -166,7 +166,7 @@ const Footer = () => {
             support@claimingmadeeasy.com
           </Link>
         </p>
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <span className="text-sm text-gray-300">
           © 2021-2022&nbsp;
           <Link href="/" className="hover:underline">
             ClaimingMadeEasy™
