@@ -32,13 +32,13 @@ export default function Home() {
     <main>
       <Header />
 
-      <section className="bg-primary-700 flex flex-col justify-start md:justify-center items-center">
+      <section className="bg-white dark:bg-gray-900">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl xl:text-6xl dark:text-white">
+            <h1 className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
               Your&nbsp;
-              <span className="text-yellow-200">£&nbsp;</span>
-              <span className="text-yellow-200">
+              <span className="text-primary-700">£&nbsp;</span>
+              <span className="text-primary-700">
                 <Animated
                   animateToNumber={amount}
                   configs={[
@@ -50,53 +50,53 @@ export default function Home() {
               </span>
               &nbsp;tax claim starts here
             </h1>
-            <p className="max-w-2xl mb-1 font-light text-gray-300 md:text-lg lg:text-xl dark:text-gray-300">
+            <p className="max-w-2xl font-light text-gray-500 md:text-lg lg:text-xl dark:text-gray-400">
               Have you worked from home for a single day or more during the
               pandemic?
             </p>
-            <p className="max-w-2xl mb-1 font-light text-yellow-200 lg:mb-2 text-xs dark:text-yellow-200">
+            <p className="max-w-2xl mb-6 font-light text-gray-300 lg:mb-10 text-sm md:text-base dark:text-gray-200">
               Select which year you worked a day or more from home. If you
               worked from home during both years, select &apos;Both&apos;
             </p>
-            <div className="flex justify-center items-center md:justify-start space-x-2 p-4 mb-4">
+            <div className="items-center justify-between p-4 mb-4 space-y-4 bg-gray-100 rounded dark:bg-gray-700 sm:flex sm:space-y-0">
               <button
-                className={`inline-flex items-center justify-center px-5 py-5 text-lg font-medium text-center ${
+                className={`inline-flex items-center justify-center w-full px-5 py-5 text-base font-medium text-center rounded-lg sm:w-1/4 focus:ring-4 ${
                   type == TAX_TYPE.LAST_YEAR
-                    ? "bg-primary-900 text-white rounded-lg ring-0 focus:ring-0"
-                    : "bg-gray-50 hover:bg-gray-200 text-black rounded-lg ring-0 focus:ring-0"
+                    ? "text-white bg-primary-900 hover:bg-primary-900 focus:ring-primary-300 dark:focus:ring-primary-900"
+                    : "text-white bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900"
                 }`}
                 onClick={() => setType(TAX_TYPE.LAST_YEAR)}
               >
                 2020 - 21
               </button>
               <button
-                className={`inline-flex items-center justify-center px-5 py-5 text-lg font-medium text-center ${
+                className={`inline-flex items-center justify-center w-full px-5 py-5 text-base font-medium text-center rounded-lg sm:w-1/4 focus:ring-4 ${
                   type == TAX_TYPE.CURRENT_YEAR
-                    ? "bg-primary-900 text-white rounded-lg ring-0 focus:ring-0"
-                    : "bg-gray-50 hover:bg-gray-200 text-black rounded-lg ring-0 focus:ring-0"
+                    ? "text-white bg-primary-900 hover:bg-primary-900 focus:ring-primary-300 dark:focus:ring-primary-900"
+                    : "text-white bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900"
                 }`}
                 onClick={() => setType(TAX_TYPE.CURRENT_YEAR)}
               >
                 2021 - 22
               </button>
               <button
-                className={`inline-flex items-center justify-center px-5 py-5 text-lg font-medium text-center ${
+                className={`inline-flex items-center justify-center w-full px-5 py-5 text-base font-medium text-center rounded-lg sm:w-1/4 focus:ring-4 ${
                   type == TAX_TYPE.BOTH
-                    ? "bg-primary-900 text-white rounded-lg ring-0 focus:ring-0"
-                    : "bg-gray-50 hover:bg-gray-200 text-black rounded-lg ring-0 focus:ring-0"
+                    ? "text-white bg-primary-900 hover:bg-primary-900 focus:ring-primary-300 dark:focus:ring-primary-900"
+                    : "text-white bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900"
                 }`}
                 onClick={() => setType(TAX_TYPE.BOTH)}
               >
                 Both
               </button>
             </div>
-            <div className="w-full flex items-center justify-center md:justify-start p-0 md:p-4 mb-4">
+            <div className="w-full flex items-center justify-center md:justify-start mb-4">
               <Link href="/claim">
                 <button
-                  className={`inline-flex items-center justify-center px-10 md:px-14 py-7 text-3xl font-semibold text-center bg-[#25D0BC] hover:bg-[#1bb6a4] text-white rounded-lg ring-0 focus:ring-0 transition-all duration-300`}
+                  className={`inline-flex items-center justify-center px-10 md:px-14 py-5 text-3xl font-semibold text-center bg-[#25D0BC] hover:bg-[#1bb6a4] text-white rounded-lg ring-0 focus:ring-0 transition-all duration-300`}
                   onClick={() => {}}
                 >
-                  Check my claim&nbsp;
+                  Check my claim&nbsp;&nbsp;
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="26"
@@ -306,8 +306,11 @@ export default function Home() {
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
               <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                <div className="pl-3 text-sm font-light text-gray-900 dark:text-white">
-                  - S from reviews.io
+                <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                  S
+                </div>
+                <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+                  from reviews.io
                 </div>
               </div>
             </figcaption>

@@ -14,7 +14,7 @@ const Header = () => {
           href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css"
         />
       </Head>
-      <nav className="bg-primary-700 border-gray-200 px-4 md:px-6 py-2.5">
+      <nav className="bg-gray-100 border-gray-200 px-4 md:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link href="/" className="flex items-center">
             <img
@@ -22,15 +22,15 @@ const Header = () => {
               className="mr-3 h-6 sm:h-9"
               alt="Flowbite Logo"
             />
-            <span className="self-center text-white text-xl font-semibold whitespace-nowrap">
+            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               ClaimingMadeEasy™
             </span>
           </Link>
-          <div className="flex items-center md:order-2 space-x-2">
+          <div className="flex items-center md:order-2">
             <button
               id="theme-toggle"
               type="button"
-              className="text-white hover:bg-white hover:text-blue-700 rounded-lg p-2.5  transition-all duration-300"
+              className="text-gray-400 font-medium rounded-lg text-sm px-2 py-2 mr-2 outline-none ring-0 focus:right-0 focus:outline-none"
             >
               <svg
                 id="theme-toggle-dark-icon"
@@ -55,18 +55,16 @@ const Header = () => {
                 ></path>
               </svg>
             </button>
-            <div className="mt-4 font-medium hidden md:flex md:flex-row md:space-x-8 md:mt-0">
-              <Link
-                href="/claim"
-                className="text-white hover:bg-white hover:text-blue-700 font-medium rounded-lg text-sm px-4 md:px-5 py-2.5 transition-all duration-300"
-              >
-                Get started
-              </Link>
-            </div>
+            <Link
+              href="/claim"
+              className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 md:px-5 py-2 md:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 hidden md:flex"
+            >
+              Get started
+            </Link>
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
-              className="inline-flex items-center p-2 ml-1 text-sm text-primary-700 rounded-lg md:hidden bg-gray-100"
+              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="mobile-menu-2"
               aria-expanded="false"
             >
@@ -98,17 +96,19 @@ const Header = () => {
             </button>
           </div>
           <div
-            className="hidden justify-between items-center w-full md:flex md:w-auto md:justify-end md:items-center md:order-1"
+            className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-2"
           >
-            <div className="flex flex-col mt-4 font-medium md:hidden">
-              <Link
-                href="/claim"
-                className="w-full text-center text-white hover:bg-white hover:text-blue-700 font-medium rounded-lg text-sm px-4 md:px-5 py-2.5"
-              >
-                Get started
-              </Link>
-            </div>
+            <ul className="w-full flex flex-col mt-4 justify-start items-end font-medium md:flex-row md:space-x-8 md:mt-0 md:hidden">
+              <li>
+                <Link
+                  href="/claim"
+                  className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 md:px-5 py-2 md:py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                >
+                  Get started
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
