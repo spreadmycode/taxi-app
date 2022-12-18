@@ -14,7 +14,7 @@ const Header = () => {
           href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css"
         />
       </Head>
-      <nav className="bg-gray-100 border-gray-200 px-4 md:px-6 py-2.5 dark:bg-gray-800">
+      <nav className="bg-white border-gray-200 px-4 md:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link href="/" className="flex items-center">
             <img
@@ -55,12 +55,12 @@ const Header = () => {
                 ></path>
               </svg>
             </button>
-            <Link
+            {/* <Link
               href="/claim"
               className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 md:px-5 py-2 md:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 hidden md:flex"
             >
               Get started
-            </Link>
+            </Link> */}
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
@@ -101,12 +101,12 @@ const Header = () => {
           >
             <ul className="w-full flex flex-col mt-4 justify-start items-end font-medium md:flex-row md:space-x-8 md:mt-0 md:hidden">
               <li>
-                <Link
+                {/* <Link
                   href="/claim"
                   className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 md:px-5 py-2 md:py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
                 >
                   Get started
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>
