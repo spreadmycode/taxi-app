@@ -10,6 +10,12 @@ module.exports = {
   plugins: [require("flowbite/plugin")],
   darkMode: "class",
   theme: {
+    screens: {
+      sm: "480px",
+      md: "976px",
+      lg: "1024px",
+      xl: "1440px",
+    },
     extend: {
       colors: {
         primary: {
