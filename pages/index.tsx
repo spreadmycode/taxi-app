@@ -3,7 +3,10 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import dynamic from "next/dynamic";
 import { TAX_TYPE } from "@/libs/constants";
-import Review from "@/components/Review";
+
+const Review = dynamic(() => import("@/components/Review"), {
+  ssr: false,
+});
 
 const Animated = dynamic(() => import("react-animated-numbers"), {
   ssr: false,
