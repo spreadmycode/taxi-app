@@ -50,11 +50,11 @@ export default function Home() {
               </span>
               &nbsp;tax claim starts here
             </h1>
-            <p className="max-w-2xl font-light text-gray-500 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className="max-w-2xl font-bold text-gray-500 md:text-lg lg:text-xl dark:text-gray-400">
               Have you worked from home for a single day or more during the
               pandemic?
             </p>
-            <div className="max-w-2xl text-sm text-gray-500 mb-6 lg:mb-10">
+            <div className="max-w-2xl text-xs text-primary-700 mb-6 lg:mb-10">
               Select which year you worked a day or more from home. If you
               worked from home during both years, select &apos;Both&apos;
             </div>
@@ -545,7 +545,7 @@ export default function Home() {
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
               <img
-                className="w-6 h-6 rounded-full"
+                className="p-1 w-10 h-10 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
                 alt="profile picture"
               />
