@@ -9,7 +9,7 @@ export default function Claim() {
     <main>
       <Header />
 
-      <section>
+      <section className="bg-white dark:bg-gray-900">
         <div className="max-w-screen-xl px-2 py-4 mx-auto text-center lg:px-2 lg:py-8">
           <div className="flex justify-between mb-1">
             <span className="text-base font-medium text-blue-700 dark:text-white">
