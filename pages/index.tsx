@@ -37,8 +37,10 @@ export default function Home() {
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
               Your&nbsp;
-              <span className="text-primary-700">£&nbsp;</span>
-              <span className="text-primary-700">
+              <span className="text-primary-600 dark:text-primary-500">
+                £&nbsp;
+              </span>
+              <span className="text-primary-600 dark:text-primary-500">
                 <Animated
                   animateToNumber={amount}
                   configs={[
@@ -50,15 +52,11 @@ export default function Home() {
               </span>
               &nbsp;tax claim starts here
             </h1>
-            <p className="max-w-2xl font-light text-gray-500 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className="max-w-2xl font-light text-gray-500 mb-6 lg:mb-10 md:text-lg lg:text-xl dark:text-gray-400">
               Have you worked from home for a single day or more during the
               pandemic?
             </p>
-            <p className="max-w-2xl mb-6 font-light text-gray-300 lg:mb-10 text-sm md:text-base dark:text-gray-200">
-              Select which year you worked a day or more from home. If you
-              worked from home during both years, select &apos;Both&apos;
-            </p>
-            <div className="items-center justify-start space-x-0 p-4 mb-4 space-y-4 bg-gray-100 rounded dark:bg-gray-700 sm:flex sm:space-y-0 sm:space-x-2">
+            <div className="items-center justify-start space-x-0 md:space-x-2 p-4 mb-4 space-y-4 bg-gray-100 rounded dark:bg-gray-700 sm:flex sm:space-y-0">
               <button
                 className={`inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center rounded-lg sm:w-auto focus:ring-4 ${
                   type == TAX_TYPE.LAST_YEAR
@@ -90,45 +88,9 @@ export default function Home() {
                 Both
               </button>
             </div>
-            <div className="w-full flex items-center justify-center md:justify-start mb-4">
-              <ul className="grid gap-6 w-full md:grid-cols-2">
-                <Link href="/claim">
-                  <li>
-                    <input
-                      type="radio"
-                      id="hosting-small"
-                      name="hosting"
-                      value="hosting-small"
-                      className="hidden peer"
-                      required
-                    />
-                    <label
-                      htmlFor="hosting-small"
-                      className="inline-flex justify-between items-center p-5 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
-                    >
-                      <div className="block">
-                        <div className="w-full text-lg font-semibold">
-                          £ {amount}
-                        </div>
-                        <div className="w-full">Check my claim</div>
-                      </div>
-                      <svg
-                        aria-hidden="true"
-                        className="ml-3 w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </label>
-                  </li>
-                </Link>
-              </ul>
+            <div className="text-sm text-gray-500">
+              Select which year you worked a day or more from home. If you
+              worked from home during both years, select &apos;Both&apos;
             </div>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
@@ -546,18 +508,17 @@ export default function Home() {
       <section className="bg-white dark:bg-gray-900">
         <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
           <figure className="max-w-screen-md mx-auto">
-            <div className="flex flex-col justify-center items-center space-y-4 mb-5">
-              <img
-                className="w-32 h-32 rounded-full ring-4 ring-gray-300 dark:ring-gray-500"
-                src="/reviewer-photo.jpg"
-                alt="profile picture"
+            <svg
+              className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+              viewBox="0 0 24 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                fill="currentColor"
               />
-              <img
-                className="w-32"
-                src="/reviews-logo.png"
-                alt="review picture"
-              />
-            </div>
+            </svg>
             <blockquote>
               <p className="text-2xl font-medium text-gray-900 dark:text-white">
                 &quot;Very speedy response & questions easy to answer; form
@@ -567,12 +528,57 @@ export default function Home() {
               </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
+              <img
+                className="w-6 h-6 rounded-full"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                alt="profile picture"
+              />
               <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                 <div className="pr-3 font-medium text-gray-900 dark:text-white">
                   S
                 </div>
                 <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
                   from reviews.io
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section className="bg-white dark:bg-gray-900">
+        <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+          <figure className="max-w-screen-md mx-auto">
+            <svg
+              className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+              viewBox="0 0 24 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                fill="currentColor"
+              />
+            </svg>
+            <blockquote>
+              <p className="text-2xl font-medium text-gray-900 dark:text-white">
+                "Flowbite is just awesome. It contains tons of predesigned
+                components and pages starting from login screen to complex
+                dashboard. Perfect choice for your next SaaS application."
+              </p>
+            </blockquote>
+            <figcaption className="flex items-center justify-center mt-6 space-x-3">
+              <img
+                className="w-6 h-6 rounded-full"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                alt="profile picture"
+              />
+              <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                  Micheal Gough
+                </div>
+                <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+                  CEO at Google
                 </div>
               </div>
             </figcaption>
