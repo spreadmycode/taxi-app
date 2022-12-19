@@ -1,8 +1,7 @@
-import { useThemeValue } from "@/contexts/ThemeContext";
-import { THEME } from "@/hooks/useTheme";
 import Head from "next/head";
 import Link from "next/link";
-import Script from "next/script";
+import { useThemeValue } from "@/contexts/ThemeContext";
+import { THEME } from "@/hooks/useTheme";
 
 const Header = () => {
   const { theme, changeTheme } = useThemeValue();

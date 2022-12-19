@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import dynamic from "next/dynamic";
 import { TAX_TYPE } from "@/libs/constants";
 
-const Review = dynamic(() => import("@/components/Review"), {
+const Header = dynamic(() => import("@/components/Header"), {
   ssr: false,
 });
 
@@ -84,26 +84,28 @@ export default function Home() {
             <div className="max-w-2xl text-sm text-gray-500">
               <ul className="grid gap-6 w-full md:grid-cols-2">
                 <li>
-                  <button className="inline-flex justify-between items-center p-5 w-full focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                    <div className="flex-grow">
-                      <div className="w-full flex flex-row justify-center items-center text-2xl font-semibold">
-                        <span>Check my claim</span>
+                  <Link href="/claim">
+                    <button className="inline-flex justify-between items-center p-5 w-full focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                      <div className="flex-grow">
+                        <div className="w-full flex flex-row justify-center items-center text-2xl font-semibold">
+                          <span>Check my claim</span>
+                        </div>
                       </div>
-                    </div>
-                    <svg
-                      aria-hidden="true"
-                      className="ml-3 w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
+                      <svg
+                        aria-hidden="true"
+                        className="ml-3 w-6 h-6"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -287,7 +289,10 @@ export default function Home() {
               src="reviewer-photo.jpg"
               alt="profile picture"
             />
-            <Review />
+            <div
+              // @ts-ignore
+              src="https://cdn.trustindex.io/loader.js?1b5197711c6c13477e760d58dd2"
+            ></div>
             <blockquote>
               <p className="text-2xl font-medium text-gray-900 dark:text-white">
                 &quot;Very speedy response & questions easy to answer; form
