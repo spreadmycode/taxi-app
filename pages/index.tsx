@@ -276,7 +276,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white dark:bg-gray-900">
+      {/* <section className="bg-white dark:bg-gray-900">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
@@ -519,22 +519,21 @@ export default function Home() {
             </svg>
           </a>
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-white dark:bg-gray-900">
         <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
           <figure className="max-w-screen-md mx-auto">
-            <svg
-              className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
-              viewBox="0 0 24 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                fill="currentColor"
-              />
-            </svg>
+            <img
+              className="mx-auto p-2 w-36 h-36 rounded-full ring-4 ring-gray-300 dark:ring-gray-500 mb-3 lg:mb-5"
+              src="reviewer-photo.jpg"
+              alt="profile picture"
+            />
+            <img
+              className="mx-auto w-36 mb-3 lg:mb-5"
+              src="/reviews-logo.png"
+              alt="review marks"
+            />
             <blockquote>
               <p className="text-2xl font-medium text-gray-900 dark:text-white">
                 &quot;Very speedy response & questions easy to answer; form
@@ -562,7 +561,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white dark:bg-gray-900">
+      {/* <section className="bg-white dark:bg-gray-900">
         <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
           <figure className="max-w-screen-md mx-auto">
             <svg
@@ -600,7 +599,7 @@ export default function Home() {
             </figcaption>
           </figure>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </main>
