@@ -50,10 +50,14 @@ export default function Home() {
               </span>
               &nbsp;tax claim starts here
             </h1>
-            <p className="max-w-2xl font-light text-gray-500 mb-6 lg:mb-10 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className="max-w-2xl font-light text-gray-500 md:text-lg lg:text-xl dark:text-gray-400">
               Have you worked from home for a single day or more during the
               pandemic?
             </p>
+            <div className="max-w-2xl text-sm text-gray-500 mb-6 lg:mb-10">
+              Select which year you worked a day or more from home. If you
+              worked from home during both years, select &apos;Both&apos;
+            </div>
             <div className="items-center justify-start space-x-0 md:space-x-2 p-4 mb-4 space-y-4 bg-gray-100 rounded dark:bg-gray-700 sm:flex sm:space-y-0">
               <button
                 className={`inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900`}
@@ -73,10 +77,6 @@ export default function Home() {
               >
                 Both
               </button>
-            </div>
-            <div className="text-sm text-gray-500">
-              Select which year you worked a day or more from home. If you
-              worked from home during both years, select &apos;Both&apos;
             </div>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
