@@ -58,21 +58,21 @@ export default function Home() {
               Select which year you worked a day or more from home. If you
               worked from home during both years, select &apos;Both&apos;
             </div>
-            <div className="items-center justify-start space-x-0 md:space-x-2 mb-7 lg:mb-11 space-y-4 sm:flex sm:space-y-0">
+            <div className="flex justify-start items-center space-x-2 mb-6 lg:mb-10">
               <button
-                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                 onClick={() => setType(TAX_TYPE.LAST_YEAR)}
               >
                 2020 - 21
               </button>
               <button
-                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                 onClick={() => setType(TAX_TYPE.CURRENT_YEAR)}
               >
                 2021 - 22
               </button>
               <button
-                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                 onClick={() => setType(TAX_TYPE.BOTH)}
               >
                 Both
