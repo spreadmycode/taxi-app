@@ -58,31 +58,19 @@ export default function Home() {
             </p>
             <div className="items-center justify-start space-x-0 md:space-x-2 p-4 mb-4 space-y-4 bg-gray-100 rounded dark:bg-gray-700 sm:flex sm:space-y-0">
               <button
-                className={`inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center rounded-lg sm:w-auto focus:ring-4 ${
-                  type == TAX_TYPE.LAST_YEAR
-                    ? "text-white bg-primary-900 hover:bg-primary-900 focus:ring-primary-300 dark:focus:ring-primary-900"
-                    : "text-white bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900"
-                }`}
+                className={`inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900`}
                 onClick={() => setType(TAX_TYPE.LAST_YEAR)}
               >
                 2020 - 21
               </button>
               <button
-                className={`inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center rounded-lg sm:w-auto focus:ring-4 ${
-                  type == TAX_TYPE.CURRENT_YEAR
-                    ? "text-white bg-primary-900 hover:bg-primary-900 focus:ring-primary-300 dark:focus:ring-primary-900"
-                    : "text-white bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900"
-                }`}
+                className={`inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900`}
                 onClick={() => setType(TAX_TYPE.CURRENT_YEAR)}
               >
                 2021 - 22
               </button>
               <button
-                className={`inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center rounded-lg sm:w-auto focus:ring-4 ${
-                  type == TAX_TYPE.BOTH
-                    ? "text-white bg-primary-900 hover:bg-primary-900 focus:ring-primary-300 dark:focus:ring-primary-900"
-                    : "text-white bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900"
-                }`}
+                className={`inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900`}
                 onClick={() => setType(TAX_TYPE.BOTH)}
               >
                 Both
