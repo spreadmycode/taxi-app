@@ -37,9 +37,7 @@ export default function Home() {
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
               Your&nbsp;
-              <span className="text-primary-600 dark:text-primary-500">
-                £&nbsp;
-              </span>
+              <span className="text-primary-600 dark:text-primary-500">£</span>
               <span className="text-primary-600 dark:text-primary-500">
                 <Animated
                   animateToNumber={amount}
