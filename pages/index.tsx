@@ -60,19 +60,19 @@ export default function Home() {
             </div>
             <div className="items-center justify-start space-x-0 md:space-x-2 mb-7 lg:mb-11 space-y-4 sm:flex sm:space-y-0">
               <button
-                className="w-full sm:w-auto px-5 py-3 rounded-lg text-base font-medium text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 focus:outline-none dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                 onClick={() => setType(TAX_TYPE.LAST_YEAR)}
               >
                 2020 - 21
               </button>
               <button
-                className="w-full sm:w-auto px-5 py-3 rounded-lg text-base font-medium text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 focus:outline-none dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                 onClick={() => setType(TAX_TYPE.CURRENT_YEAR)}
               >
                 2021 - 22
               </button>
               <button
-                className="w-full sm:w-auto px-5 py-3 rounded-lg text-base font-medium text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 focus:outline-none dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white rounded-lg sm:w-auto bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                 onClick={() => setType(TAX_TYPE.BOTH)}
               >
                 Both
@@ -81,34 +81,10 @@ export default function Home() {
             <div className="max-w-2xl text-sm text-gray-500">
               <ul className="grid gap-6 w-full md:grid-cols-2">
                 <li>
-                  <input
-                    type="radio"
-                    id="hosting-small"
-                    name="hosting"
-                    value="hosting-small"
-                    className="hidden peer"
-                    required
-                  />
-                  <label
-                    htmlFor="hosting-small"
-                    className="inline-flex justify-between items-center p-5 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
-                  >
-                    <div className="block">
-                      <div className="w-full flex flex-row justify-start items-center text-2xl font-semibold">
-                        <span>Check my claim&nbsp;</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          fill="currentColor"
-                          className="bi bi-chevron-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                          />
-                        </svg>
+                  <button className="inline-flex justify-between items-center p-5 w-full focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                    <div className="flex-grow">
+                      <div className="w-full flex flex-row justify-center items-center text-2xl font-semibold">
+                        <span>Check my claim</span>
                       </div>
                     </div>
                     <svg
@@ -124,7 +100,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                  </label>
+                  </button>
                 </li>
               </ul>
             </div>
