@@ -31,7 +31,7 @@ export default function Claim() {
           <h1 className="max-w-screen-xl mx-auto text-center mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             Get back to growth with&nbsp;
             <span className="text-blue-600 dark:text-blue-500">
-              the world's #1
+              the world&apos;s #1
             </span>
             &nbsp;CRM.
           </h1>

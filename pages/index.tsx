@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
+import Footer from "@/components/Footer";
 import { TAX_TYPE } from "@/libs/constants";
 
 const Header = dynamic(() => import("@/components/Header"), {
