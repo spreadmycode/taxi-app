@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import dynamic from "next/dynamic";
 import { TAX_TYPE } from "@/libs/constants";
+import Review from "@/components/Review";
 
 const Animated = dynamic(() => import("react-animated-numbers"), {
   ssr: false,
@@ -283,11 +284,7 @@ export default function Home() {
               src="reviewer-photo.jpg"
               alt="profile picture"
             />
-            <img
-              className="mx-auto w-36 mb-3 lg:mb-5"
-              src="/reviews-logo.png"
-              alt="review marks"
-            />
+            <Review />
             <blockquote>
               <p className="text-2xl font-medium text-gray-900 dark:text-white">
                 &quot;Very speedy response & questions easy to answer; form

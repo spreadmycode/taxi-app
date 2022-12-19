@@ -2,6 +2,7 @@ import { useThemeValue } from "@/contexts/ThemeContext";
 import { THEME } from "@/hooks/useTheme";
 import Head from "next/head";
 import Link from "next/link";
+import Script from "next/script";
 
 const Header = () => {
   const { theme, changeTheme } = useThemeValue();
@@ -20,10 +21,7 @@ const Header = () => {
         <title>Taxi App</title>
         <meta name="description" content="Taxi App" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css"
-        />
+        <script defer async src="https://cdn.trustindex.io/loader.js"></script>
       </Head>
       <nav className="bg-white border-gray-200 px-4 md:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
