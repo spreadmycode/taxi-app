@@ -156,15 +156,14 @@ const Footer = () => {
         </Link>
         <p className="my-6 max-w-2xl mx-auto  text-gray-500 dark:text-gray-400">
           ClaimingMadeEasy is a trading style of Approved Claims Group Ltd |
-          Registered in England and Wales, Company Number: 12552579 | Registered
-          Office: 20-22 Wenlock Road, London N1 7GU | VAT Number 358197753 | ICO
-          Number: ZA758940 | Email:&nbsp;
+          Company Number: 12552579 | Address: 20-22 Wenlock Road, London N1 7GU
+          {/* | Email:&nbsp;
           <Link
             href="mailto:support@claimingmadeeasy.com"
             className="hover:underline"
           >
             support@claimingmadeeasy.com
-          </Link>
+          </Link> */}
         </p>
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2021-2022&nbsp;
