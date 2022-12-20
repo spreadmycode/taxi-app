@@ -378,36 +378,6 @@ export default function Claim() {
             </div>
           </div>
           <div className="hidden w-full max-w-md p-12 lg:min-h-screen lg:h-auto lg:block bg-primary-600">
-            <div className="flex items-center mb-8 space-x-4">
-              <Link
-                href="/"
-                className="flex items-center text-xl font-semibold text-white"
-              >
-                <img
-                  className="w-6 h-6 mr-2"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
-                />
-                ClaimingMadeEasy™
-              </Link>
-              <Link
-                href="/"
-                className="inline-flex items-center text-sm font-medium text-primary-100 hover:text-white"
-              >
-                <svg
-                  className="w-6 h-6 mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                Go back
-              </Link>
-            </div>
             <div className="block p-8 text-white rounded-lg bg-primary-500">
               <h3 className="mb-1 text-2xl font-semibold">
                 Your selected plan
