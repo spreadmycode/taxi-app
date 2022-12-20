@@ -11,10 +11,10 @@ export default function Claim() {
       <Header />
 
       <section className="bg-white dark:bg-gray-900">
-        <div className="max-w-screen-xl px-2 py-4 mx-auto lg:flex lg:px-4 lg:py-8 gap-2">
+        <div className="max-w-screen-xl px-2 mx-auto lg:flex lg:px-4 gap-2">
           <div className="flex justify-start items-start md:w-3/5">
             <div className="w-full">
-              <div className="w-full pr-2 mx-auto text-center lg:pr-4">
+              <div className="w-full pr-2 pt-4 mx-auto text-center lg:pr-4 lg:pt-8">
                 <div className="flex justify-between items-center mb-1">
                   <Link
                     href="/"
