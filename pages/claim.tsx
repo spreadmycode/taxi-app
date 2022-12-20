@@ -1,7 +1,11 @@
 import { useState } from "react";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+import Footer from "@/components/Footer";
+
+const Header = dynamic(() => import("@/components/Header"), {
+  ssr: false,
+});
 
 export default function Claim() {
   const [percent, setPercent] = useState<number>(45);
@@ -12,9 +16,9 @@ export default function Claim() {
 
       <section className="bg-white dark:bg-gray-900">
         <div className="max-w-screen-xl px-2 mx-auto lg:flex lg:px-4 gap-2">
-          <div className="flex justify-start items-start md:w-3/5">
+          <div className="flex items-start mx-auto md:w-[42rem] px-4 md:px-8 xl:px-0">
             <div className="w-full">
-              <div className="w-full pr-2 pt-4 mx-auto text-center lg:pr-4 lg:pt-8">
+              <div className="w-full pt-4 mx-auto text-center lg:pt-8">
                 <div className="flex justify-between items-center mb-1">
                   <Link
                     href="/"
@@ -46,7 +50,7 @@ export default function Claim() {
                 </div>
               </div>
 
-              <div className="w-full pr-2 py-4 mx-auto text-center lg:pr-4 lg:py-8">
+              <div className="w-full py-4 mx-auto text-center lg:py-8">
                 <h1 className="max-w-screen-xl mx-auto text-left mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                   <span className="text-blue-600 dark:text-blue-500">
                     Quick quote
@@ -57,12 +61,12 @@ export default function Claim() {
                 </p>
               </div>
 
-              <div className="w-full md:w-[42rem]">
-                <div className="grid gap-5 md:grid-cols-2">
+              <form action="#">
+                <div className="grid gap-5 my-6 sm:grid-cols-2">
                   <div>
                     <label
                       htmlFor="title"
-                      className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
                       Title
                     </label>
@@ -87,7 +91,7 @@ export default function Claim() {
                   <div>
                     <label
                       htmlFor="first-name"
-                      className="block mb-2 text-lg font-medium text-green-700 dark:text-green-500"
+                      className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500"
                     >
                       First Name
                     </label>
@@ -107,7 +111,7 @@ export default function Claim() {
                   <div>
                     <label
                       htmlFor="last-name"
-                      className="block mb-2 text-lg font-medium text-red-700 dark:text-red-500"
+                      className="block mb-2 text-sm font-medium text-red-700 dark:text-red-500"
                     >
                       Last Name
                     </label>
@@ -127,14 +131,9 @@ export default function Claim() {
                   <div className="md:col-span-2">
                     <label
                       htmlFor="mobile-number"
-                      className="block mb-4 text-lg font-medium text-gray-900 dark:text-white leading-5"
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
                       Mobile Telephone Number
-                      <br />
-                      <span className="text-xs">
-                        We need this so we can keep you updated on your claim
-                        with text messages
-                      </span>
                     </label>
                     <div className="flex">
                       <span className="inline-flex flex-col justify-center items-center px-4 text-[8px] text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
@@ -162,18 +161,20 @@ export default function Claim() {
                         required
                       />
                     </div>
+                    <p
+                      id="helper-text-explanation"
+                      className="mt-2 text-sm text-gray-500 dark:text-gray-400"
+                    >
+                      We need this so we can keep you updated on your claim with
+                      text messages
+                    </p>
                   </div>
                   <div className="md:col-span-2">
                     <label
                       htmlFor="email"
-                      className="block mb-4 text-lg font-medium text-gray-900 dark:text-white leading-5"
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
                       Email Address
-                      <br />
-                      <span className="text-xs">
-                        We need this so we can keep you updated on your claim by
-                        email
-                      </span>
                     </label>
                     <div className="flex">
                       <span className="inline-flex flex-col justify-center items-center px-4 text-[8px] text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
@@ -201,18 +202,20 @@ export default function Claim() {
                         required
                       />
                     </div>
+                    <p
+                      id="helper-text-explanation"
+                      className="mt-2 text-sm text-gray-500 dark:text-gray-400"
+                    >
+                      Enter your postcode, then click &apos;Find my
+                      address&apos;. Then select your address to proceed
+                    </p>
                   </div>
                   <div className="md:col-span-2">
                     <label
                       htmlFor="address"
-                      className="block mb-4 text-lg font-medium text-gray-900 dark:text-white leading-5"
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
                       What is your current address?
-                      <br />
-                      <span className="text-xs">
-                        Enter your postcode, then click &apos;Find my
-                        address&apos;. Then select your address to proceed
-                      </span>
                     </label>
                     <div className="relative">
                       <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -246,14 +249,20 @@ export default function Claim() {
                         Search
                       </button>
                     </div>
+                    <p
+                      id="helper-text-explanation"
+                      className="mt-2 text-sm text-gray-500 dark:text-gray-400"
+                    >
+                      Enter your postcode, then click &apos;Find my
+                      address&apos;. Then select your address to proceed
+                    </p>
                   </div>
                 </div>
-
                 <div className="w-full my-6">
                   <div className="w-full mb-2">
                     <label
                       htmlFor="birthday"
-                      className="block text-lg font-medium text-gray-900 dark:text-white"
+                      className="block text-sm font-medium text-gray-900 dark:text-white"
                     >
                       Date of Birth
                     </label>
@@ -262,12 +271,6 @@ export default function Claim() {
                   <div id="birthday" className="grid gap-5  md:grid-cols-3">
                     <div className="grid gap-5 grid-cols-2 md:col-span-2">
                       <div>
-                        <label
-                          htmlFor="day"
-                          className="block mb-2 text-xs font-medium text-gray-900 dark:text-white"
-                        >
-                          Day of birth
-                        </label>
                         <select
                           id="day"
                           className="bg-gray-50 border border-gray-300 text-gray-900 md:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -284,14 +287,14 @@ export default function Claim() {
                           <option value="9">9</option>
                           <option value="10">10</option>
                         </select>
+                        <p
+                          id="helper-text-explanation"
+                          className="mt-2 text-sm text-gray-500 dark:text-gray-400"
+                        >
+                          Day of birth
+                        </p>
                       </div>
                       <div>
-                        <label
-                          htmlFor="month"
-                          className="block mb-2 text-xs font-medium text-gray-900 dark:text-white"
-                        >
-                          Month of birth
-                        </label>
                         <select
                           id="month"
                           className="bg-gray-50 border border-gray-300 text-gray-900 md:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -308,16 +311,15 @@ export default function Claim() {
                           <option value="9">9</option>
                           <option value="10">10</option>
                         </select>
+                        <p
+                          id="helper-text-explanation"
+                          className="mt-2 text-sm text-gray-500 dark:text-gray-400"
+                        >
+                          Month of birth
+                        </p>
                       </div>
                     </div>
-
                     <div>
-                      <label
-                        htmlFor="year"
-                        className="block mb-2 text-xs font-medium text-gray-900 dark:text-white"
-                      >
-                        Year of birth
-                      </label>
                       <select
                         id="year"
                         className="bg-gray-50 border border-gray-300 text-gray-900 md:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -334,11 +336,17 @@ export default function Claim() {
                         <option value="1968">1968</option>
                         <option value="1969">1969</option>
                       </select>
+                      <p
+                        id="helper-text-explanation"
+                        className="mt-2 text-sm text-gray-500 dark:text-gray-400"
+                      >
+                        Year of birth
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="w-full text-gray-500">
+                <div className="w-full text-gray-500 mb-2">
                   <ul className="grid gap-6 w-full md:grid-cols-2">
                     <li>
                       <Link href="/">
@@ -366,17 +374,17 @@ export default function Claim() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
-          <div className="hidden flex-grow p-12 lg:h-auto lg:block bg-primary-600">
+          <div className="hidden w-full max-w-md p-12 lg:min-h-screen lg:h-auto lg:block bg-primary-600">
             <div className="flex items-center mb-8 space-x-4">
               <Link
                 href="/"
-                className="flex items-center text-2xl font-semibold text-white"
+                className="flex items-center text-xl font-semibold text-white"
               >
                 <img
-                  className="w-8 h-8 mr-2"
+                  className="w-6 h-6 mr-2"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
                 />
                 ClaimingMadeEasy™
