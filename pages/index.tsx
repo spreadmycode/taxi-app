@@ -45,8 +45,7 @@ export default function Home() {
                 <Animated
                   animateToNumber={amount}
                   configs={[
-                    { mass: 1, tension: 220, friction: 100 },
-                    { mass: 1, tension: 180, friction: 130 },
+                    { mass: 1, tension: 220, friction: 90 },
                     { mass: 1, tension: 280, friction: 90 },
                   ]}
                 ></Animated>
