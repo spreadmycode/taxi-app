@@ -14,7 +14,7 @@ export default function Claim() {
         <div className="max-w-screen-xl px-2 py-4 mx-auto lg:flex lg:px-4 lg:py-8 gap-2">
           <div className="flex justify-start items-start md:w-3/5">
             <div className="w-full">
-              <div className="w-full pr-2 py-4 mx-auto text-center lg:pr-4 lg:py-8">
+              <div className="w-full pr-2 mx-auto text-center lg:pr-4">
                 <div className="flex justify-between items-center mb-1">
                   <Link
                     href="/"
