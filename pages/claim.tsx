@@ -15,7 +15,7 @@ export default function Claim() {
       <Header />
 
       <section className="bg-white dark:bg-gray-900">
-        <div className="max-w-screen-xl px-2 mx-auto lg:flex lg:px-4 gap-2">
+        <div className="max-w-screen-xl mx-auto lg:flex gap-2">
           <div className="flex items-start mx-auto md:w-[42rem] px-4 md:px-8 xl:px-0">
             <div className="w-full">
               <div className="w-full pt-4 mx-auto text-center lg:pt-8">
