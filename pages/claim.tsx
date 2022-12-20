@@ -39,12 +39,12 @@ export default function Claim() {
                     Go back
                   </Link>
                   <span className="text-sm font-medium text-blue-700 dark:text-white">
-                    {percent}%
+                    {percent}% completed
                   </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                   <div
-                    className="bg-blue-600 h-2.5 rounded-full"
+                    className="bg-[#0E9F6E] h-2.5 rounded-full"
                     style={{ width: `${percent}%` }}
                   ></div>
                 </div>
