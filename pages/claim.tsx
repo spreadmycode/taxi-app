@@ -11,7 +11,7 @@ export default function Claim() {
   const [percent, setPercent] = useState<number>(45);
 
   return (
-    <main>
+    <main className="bg-white dark:bg-gray-900">
       <Header />
 
       <section className="bg-white dark:bg-gray-900 mb-8 md:mb-24">
