@@ -87,7 +87,7 @@ export default function Claim() {
                       <option value="Lord">Lord</option>
                     </select>
                   </div>
-                  <div></div>
+                  <div className="hidden md:flex"></div>
                   <div>
                     <label
                       htmlFor="first-name"
