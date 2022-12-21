@@ -37,3 +37,12 @@ export const CONFIRMS = [
   "I understand that The Claims Guys Legal will be appointed as my tax agent to enable them to submit tax refund claims to HMRC on my behalf and re-claim any overpaid tax",
   "I have read the tax claim documents, agree to the terms of engagement and understand that the information I have provided and my signature will be used to populate a claim form(s) to be sent to HMRC",
 ];
+
+export const NEXT_BUTTON_HELPERS = [
+  "",
+  "",
+  "",
+  "When you click submit, we will receive your personal information and claim documents, to begin processing your tax refund claims. We will handle your data in accordance with our Privacy Policy.",
+  "",
+  "",
+];

@@ -12,6 +12,7 @@ import ReviewSection from "@/components/ReviewSection";
 import ClaimNow from "@/components/steps/Step2-ClaimNow";
 import SignComplete from "@/components/steps/Step3-SignComplete";
 import LastThing from "@/components/steps/Step4-LastThing";
+import { NEXT_BUTTON_HELPERS } from "@/libs/doms";
 
 const Header = dynamic(() => import("@/components/Header"), {
   ssr: false,
@@ -45,7 +46,9 @@ export default function Claim() {
         <div className="max-w-screen-xl mx-auto lg:flex gap-2">
           <div className="flex items-start mx-auto md:w-[42rem] px-4 md:px-8 xl:px-0">
             <div className="w-full">
-              <ProgressBar step={step} prevStep={prevStep} />
+              {step < STEP.LAST_THING && (
+                <ProgressBar step={step} prevStep={prevStep} />
+              )}
               <Title step={step} />
 
               {step == STEP.QUICK_QUOTE && <QuickQuote />}
@@ -53,7 +56,10 @@ export default function Claim() {
               {step == STEP.SIGN_COMPLETE && <SignComplete />}
               {step == STEP.LAST_THING && <LastThing />}
 
-              <NextButton onClick={nextStep} />
+              <NextButton
+                onClick={nextStep}
+                helper={NEXT_BUTTON_HELPERS[step]}
+              />
             </div>
           </div>
 
