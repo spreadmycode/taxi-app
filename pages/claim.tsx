@@ -14,7 +14,7 @@ export default function Claim() {
     <main>
       <Header />
 
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900 mb-8 md:mb-24">
         <div className="max-w-screen-xl mx-auto lg:flex gap-2">
           <div className="flex items-start mx-auto md:w-[42rem] px-4 md:px-8 xl:px-0">
             <div className="w-full">
@@ -50,7 +50,7 @@ export default function Claim() {
                 </div>
               </div>
 
-              <div className="w-full py-4 mx-auto text-center lg:py-8">
+              <div className="w-full pt-4 mx-auto text-center lg:pt-8">
                 <h1 className="max-w-screen-xl mx-auto text-left mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                   <span className="text-blue-600 dark:text-blue-500">
                     Quick quote
@@ -346,7 +346,7 @@ export default function Claim() {
                   </div>
                 </div>
 
-                <div className="w-full text-gray-500 mb-2">
+                <div className="w-full text-gray-500 mt-10">
                   <ul className="grid gap-6 w-full md:grid-cols-2">
                     <li>
                       <Link href="/">
