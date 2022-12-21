@@ -22,10 +22,10 @@ export default function Claim() {
                 <div className="flex justify-between items-center mb-1">
                   <Link
                     href="/"
-                    className="inline-flex items-center text-sm font-medium text-blue-700 dark:text-white"
+                    className="inline-flex items-center text-lg font-medium text-blue-700 dark:text-white"
                   >
                     <svg
-                      className="w-5 h-5 mr-1"
+                      className="w-6 h-6 mr-1"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -38,13 +38,13 @@ export default function Claim() {
                     </svg>
                     Go back
                   </Link>
-                  <span className="text-sm font-medium text-blue-700 dark:text-white">
+                  <span className="text-lg font-medium text-blue-700 dark:text-white">
                     {percent}% completed
                   </span>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div className="mb-4 w-full h-4 bg-gray-200 rounded-full dark:bg-gray-700">
                   <div
-                    className="bg-[#0E9F6E] h-2.5 rounded-full"
+                    className="bg-[#0E9F6E] h-4 rounded-full"
                     style={{ width: `${percent}%` }}
                   ></div>
                 </div>
@@ -62,7 +62,7 @@ export default function Claim() {
               </div>
 
               <form action="#">
-                <div className="grid gap-5 my-6 sm:grid-cols-2">
+                <div className="grid gap-5 mt-6 mb-5 sm:grid-cols-2">
                   <div>
                     <label
                       htmlFor="title"
@@ -258,7 +258,7 @@ export default function Claim() {
                     </p>
                   </div>
                 </div>
-                <div className="w-full my-6">
+                <div className="w-full my-5">
                   <div className="w-full mb-2">
                     <label
                       htmlFor="birthday"
@@ -268,7 +268,7 @@ export default function Claim() {
                     </label>
                   </div>
 
-                  <div id="birthday" className="grid gap-5  md:grid-cols-3">
+                  <div id="birthday" className="grid gap-5 md:grid-cols-3">
                     <div className="grid gap-5 grid-cols-2 md:col-span-2">
                       <div>
                         <select
