@@ -2,7 +2,7 @@ const QuickQuote = () => {
   return (
     <>
       <div className="grid gap-5 mt-6 mb-5 sm:grid-cols-2">
-        <div>
+        {/* <div>
           <label
             htmlFor="title"
             className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
@@ -26,7 +26,7 @@ const QuickQuote = () => {
             <option value="Lord">Lord</option>
           </select>
         </div>
-        <div className="hidden md:flex"></div>
+        <div className="hidden md:flex"></div> */}
         <div>
           <label
             htmlFor="first-name"
@@ -66,7 +66,7 @@ const QuickQuote = () => {
             <span className="font-medium">Oh, snapp!</span> Some error message.
           </p>
         </div>
-        <div className="sm:col-span-2">
+        {/* <div className="sm:col-span-2">
           <label
             htmlFor="mobile-number"
             className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
@@ -106,7 +106,7 @@ const QuickQuote = () => {
             We need this so we can keep you updated on your claim with text
             messages
           </p>
-        </div>
+        </div> */}
         <div className="sm:col-span-2">
           <label
             htmlFor="email"
@@ -144,8 +144,7 @@ const QuickQuote = () => {
             id="helper-text-explanation"
             className="mt-2 text-sm text-gray-500 dark:text-gray-400"
           >
-            Enter your postcode, then click &apos;Find my address&apos;. Then
-            select your address to proceed
+            We need your email so we can keep you updated on your claim
           </p>
         </div>
         <div className="sm:col-span-2">
@@ -191,8 +190,8 @@ const QuickQuote = () => {
             id="helper-text-explanation"
             className="mt-2 text-sm text-gray-500 dark:text-gray-400"
           >
-            Enter your postcode, then click &apos;Find my address&apos;. Then
-            select your address to proceed
+            Enter your postcode, then click &apos;Search&apos; to find your
+            address and proceed
           </p>
         </div>
       </div>

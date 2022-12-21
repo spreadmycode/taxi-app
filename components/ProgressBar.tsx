@@ -11,11 +11,11 @@ const ProgressBar = ({ step, prevStep }: Props) => {
     <div className="w-full pt-4 mx-auto text-center lg:pt-8">
       <div className="flex justify-between items-center mb-1">
         <button
-          className="inline-flex items-center text-lg font-medium text-blue-700 dark:text-white"
+          className="inline-flex items-center text-base font-medium text-blue-700 dark:text-white"
           onClick={() => prevStep()}
         >
           <svg
-            className="w-6 h-6 mr-1"
+            className="w-5 h-5 mr-1"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -28,13 +28,13 @@ const ProgressBar = ({ step, prevStep }: Props) => {
           </svg>
           Go back
         </button>
-        <span className="text-lg font-medium text-blue-700 dark:text-white">
+        <span className="text-sm font-medium text-blue-700 dark:text-white">
           {PERCENTS[step]}% completed
         </span>
       </div>
-      <div className="mb-4 w-full h-4 bg-gray-200 rounded-full dark:bg-gray-700">
+      <div className="mb-4 w-full h-2.5 bg-gray-200 rounded-full dark:bg-gray-700">
         <div
-          className="bg-green-500 h-4 rounded-full transition-all duration-500"
+          className="bg-green-500 h-2.5 rounded-full transition-all duration-500"
           style={{ width: `${PERCENTS[step]}%` }}
         ></div>
       </div>

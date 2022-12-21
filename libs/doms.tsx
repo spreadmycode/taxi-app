@@ -26,15 +26,15 @@ export const SUB_TITLES = [
     &nbsp;and the following statements, before Signing
   </span>,
   "Thank you. We just need the following to start your claim",
-  "Also, we need your Employers PAYE Number to submit your claim",
+  "We also need your Employers PAYE Number to submit your claim",
   "Your PAYE information has been received",
 ];
 
 export const CONFIRMS = [
-  "refundo is a trading style of The Claims Guys Legal, a HMRC registered Tax Agent. We will handle and process your claim",
-  "I confirm that I have paid tax in the relevant years I am claiming for",
+  "ClaimingMadeEasy is a trading style of Approved Claims Group Ltd, a HMRC registered Tax Agent. We will handle and process your claim",
+  "I confirm that I have paid taxes in the relevant years I am claiming for",
   "I understand that the information I have provided will be shared with HMRC and confirm that this is true and accurate",
-  "I understand that The Claims Guys Legal will be appointed as my tax agent to enable them to submit tax refund claims to HMRC on my behalf and re-claim any overpaid tax",
+  "I understand that ClaimingMadeEasy will be appointed as my tax agent to enable them to submit tax refund claims to HMRC on my behalf and re-claim any overpaid tax",
   "I have read the tax claim documents, agree to the terms of engagement and understand that the information I have provided and my signature will be used to populate a claim form(s) to be sent to HMRC",
 ];
 
