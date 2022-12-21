@@ -23,7 +23,7 @@ const StepAlert = ({ step }: Props) => {
             className="p-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800"
             role="alert"
           >
-            ⚠️ This is the last question
+            This is the last question
           </div>
         </div>
       )}

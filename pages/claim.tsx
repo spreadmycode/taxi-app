@@ -71,7 +71,7 @@ export default function Claim() {
             </div>
           </div>
 
-          <SidePanel />
+          <SidePanel step={step} />
         </div>
       </section>
 

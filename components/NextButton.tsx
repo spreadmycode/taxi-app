@@ -38,10 +38,10 @@ const NextButton = ({ onClick, label = "Next", helper = "" }: Props) => {
                 {helper}
               </p>
             )}
-            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+            <img className="w-20 mt-4" src="/ssl-secure.png" alt="Secure" />
+            <p className="text-sm text-gray-500 dark:text-gray-400">
               Your information is 100% safe and secure on this website
             </p>
-            <img className="w-32 mt-2" src="/ssl-secure.png" alt="Secure" />
           </div>
         </li>
       </ul>

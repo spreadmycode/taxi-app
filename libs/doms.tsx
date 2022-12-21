@@ -29,7 +29,7 @@ export const SUB_TITLES = [
   "We need your National Insurance (NI) number to submit your claim",
   "We also need your Employers PAYE Number to submit your claim",
   "Your PAYE information has been received",
-  "Due to the Pandemic, the government asked the workforce to work from home (WFH) whenever possible. All UK taxpayers may be eligible to claim the full 312 WFH allowance since 6 April 2020, provided they have worked a minimum of one day from home (per year).",
+  "Due to the Pandemic, the government asked the workforce to work from home (WFH) whenever possible. All UK taxpayers may be eligible to claim the full £312 WFH allowance since 6 April 2020, provided they have worked a minimum of one day from home (per year).",
 ];
 
 export const CONFIRMS = [
@@ -45,6 +45,14 @@ export const ERRORS = [
   "Each household member can make a claim",
   "No receipts are required",
   "Includes house shares",
+];
+
+export const SIDE_INFO = [
+  "Your details",
+  "Your employer",
+  "Your signature",
+  "Your (NI) number",
+  "Your employer ref",
 ];
 
 export const NEXT_BUTTON_HELPERS = [
