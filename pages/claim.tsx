@@ -15,6 +15,7 @@ import LastThing from "@/components/steps/Step4-LastThing";
 import { NEXT_BUTTON_HELPERS } from "@/libs/doms";
 import ThankYou from "@/components/steps/Step5-ThankYou";
 import StepAlert from "@/components/StepAlert";
+import AllDone from "@/components/steps/Step6-AllDone";
 
 const Header = dynamic(() => import("@/components/Header"), {
   ssr: false,
@@ -33,7 +34,7 @@ export default function Claim() {
   };
 
   const nextStep = () => {
-    if (step == STEP.THANK_YOU) {
+    if (step == STEP.ALL_DONE) {
       router.push("/");
     } else {
       setStep((step) => step + 1);
@@ -62,12 +63,15 @@ export default function Claim() {
               {step == STEP.SIGN_COMPLETE && <SignComplete />}
               {step == STEP.LAST_THING && <LastThing />}
               {step == STEP.THANK_YOU && <ThankYou />}
+              {step == STEP.ALL_DONE && <AllDone />}
 
-              <NextButton
-                onClick={nextStep}
-                label={step == STEP.THANK_YOU ? "Submit" : "Next"}
-                helper={NEXT_BUTTON_HELPERS[step]}
-              />
+              {step != STEP.ALL_DONE && (
+                <NextButton
+                  onClick={nextStep}
+                  label={step == STEP.THANK_YOU ? "Submit" : "Next"}
+                  helper={NEXT_BUTTON_HELPERS[step]}
+                />
+              )}
             </div>
           </div>
 

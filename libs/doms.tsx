@@ -8,7 +8,7 @@ export const TITLES = [
   "Sign & complete",
   "One more thing!",
   "Lastly!",
-  "You're all done.",
+  "Thank you! You're all done",
   "Apologies, we are unable to proceed",
 ];
 
@@ -28,7 +28,7 @@ export const SUB_TITLES = [
   </span>,
   "We need your National Insurance (NI) number to submit your claim",
   "We also need your Employers PAYE Number to submit your claim",
-  "Your PAYE information has been received",
+  "We will be in touch with updates on your claim as soon as we hear anything. All you have to do is sit back, relax and wait until then!",
   "Due to the Pandemic, the government asked the workforce to work from home (WFH) whenever possible. All UK taxpayers may be eligible to claim the full £312 WFH allowance since 6 April 2020, provided they have worked a minimum of one day from home (per year).",
 ];
 
