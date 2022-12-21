@@ -8,7 +8,7 @@ const NextButton = ({ onClick, label = "Next", helper = "" }: Props) => {
   return (
     <div className="w-full text-gray-500 mt-10 mb-8 md:mb-24">
       <ul className="grid gap-6 w-full md:grid-cols-2">
-        <li className={helper ? "md:col-span-2" : ""}>
+        <li className="md:col-span-2">
           <div>
             <button
               className="inline-flex justify-between items-center p-5 w-full focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
@@ -38,6 +38,10 @@ const NextButton = ({ onClick, label = "Next", helper = "" }: Props) => {
                 {helper}
               </p>
             )}
+            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+              Your information is 100% safe and secure on this website
+            </p>
+            <img className="w-80 mt-2" src="/ssl-secure.png" alt="Secure" />
           </div>
         </li>
       </ul>

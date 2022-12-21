@@ -14,7 +14,7 @@ export const TITLES = [
 
 export const SUB_TITLES = [
   "Enter your details to receive your estimated tax claim quote",
-  "Let us know some extra details so we can process your claim",
+  "Tell us about your employment so that we can process your claim",
   <span>
     Please carefully read the&nbsp;
     <Link
@@ -48,7 +48,7 @@ export const ERRORS = [
 ];
 
 export const NEXT_BUTTON_HELPERS = [
-  "",
+  "Your personal information will be treated carefully in accordance with our Privacy Policy. We will contact you about claim opportunities using the contact details you provide. You can opt out of receiving communications from us at any time by sending us an email to support@claimingmadeeasy.co.uk",
   "",
   "",
   "",
