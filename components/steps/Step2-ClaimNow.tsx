@@ -6,7 +6,7 @@ const ClaimNow = () => {
 
   return (
     <div className="grid gap-5 mt-6 mb-5 sm:grid-cols-2">
-      <div className="md:col-span-2">
+      <div className="sm:col-span-2">
         <label
           htmlFor="employer1"
           className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
@@ -25,7 +25,7 @@ const ClaimNow = () => {
           Please write your employer&apos;s name as it appears on your payslip
         </p>
       </div>
-      <div className="md:col-span-2">
+      <div className="sm:col-span-2">
         <label
           htmlFor="employer2"
           className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
@@ -44,7 +44,7 @@ const ClaimNow = () => {
           Please write your employer&apos;s name as it appears on your payslip
         </p>
       </div>
-      <div className="md:col-span-2">
+      <div className="sm:col-span-2">
         <label
           htmlFor="confirm"
           className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"

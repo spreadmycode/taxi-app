@@ -66,7 +66,7 @@ const QuickQuote = () => {
             <span className="font-medium">Oh, snapp!</span> Some error message.
           </p>
         </div>
-        <div className="md:col-span-2">
+        <div className="sm:col-span-2">
           <label
             htmlFor="mobile-number"
             className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
@@ -107,7 +107,7 @@ const QuickQuote = () => {
             messages
           </p>
         </div>
-        <div className="md:col-span-2">
+        <div className="sm:col-span-2">
           <label
             htmlFor="email"
             className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
@@ -148,7 +148,7 @@ const QuickQuote = () => {
             select your address to proceed
           </p>
         </div>
-        <div className="md:col-span-2">
+        <div className="sm:col-span-2">
           <label
             htmlFor="address"
             className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
@@ -206,8 +206,8 @@ const QuickQuote = () => {
           </label>
         </div>
 
-        <div id="birthday" className="grid gap-5 md:grid-cols-3">
-          <div className="grid gap-5 grid-cols-2 md:col-span-2">
+        <div id="birthday" className="grid gap-5 sm:grid-cols-3">
+          <div className="grid gap-5 grid-cols-2 sm:col-span-2">
             <div>
               <select
                 id="day"

@@ -13,6 +13,7 @@ import ClaimNow from "@/components/steps/Step2-ClaimNow";
 import SignComplete from "@/components/steps/Step3-SignComplete";
 import LastThing from "@/components/steps/Step4-LastThing";
 import { NEXT_BUTTON_HELPERS } from "@/libs/doms";
+import ThankYou from "@/components/steps/Step5-ThankYou";
 
 const Header = dynamic(() => import("@/components/Header"), {
   ssr: false,
@@ -31,7 +32,7 @@ export default function Claim() {
   };
 
   const nextStep = () => {
-    if (step == STEP.LAST_THING) {
+    if (step == STEP.THANK_YOU) {
       router.push("/");
     } else {
       setStep((step) => step + 1);
@@ -55,6 +56,7 @@ export default function Claim() {
               {step == STEP.CLAIM_NOW && <ClaimNow />}
               {step == STEP.SIGN_COMPLETE && <SignComplete />}
               {step == STEP.LAST_THING && <LastThing />}
+              {step == STEP.THANK_YOU && <ThankYou />}
 
               <NextButton
                 onClick={nextStep}

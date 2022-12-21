@@ -7,7 +7,7 @@ export const TITLES = [
   "Claim now",
   "Sign & complete",
   "Last thing!",
-  "Thank you",
+  "Lastly!",
   "You're all done.",
 ];
 
@@ -26,7 +26,7 @@ export const SUB_TITLES = [
     &nbsp;and the following statements, before Signing
   </span>,
   "Thank you. We just need the following to start your claim",
-  "We have received your information and are currently processing it.",
+  "Also, we need your Employers PAYE Number to submit your claim",
   "Your PAYE information has been received",
 ];
 
@@ -42,7 +42,7 @@ export const NEXT_BUTTON_HELPERS = [
   "",
   "",
   "",
-  "When you click submit, we will receive your personal information and claim documents, to begin processing your tax refund claims. We will handle your data in accordance with our Privacy Policy.",
   "",
+  "When you click submit, we will receive your personal information and claim documents, to begin processing your tax refund claims. We will handle your data in accordance with our Privacy Policy.",
   "",
 ];
