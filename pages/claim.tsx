@@ -14,6 +14,7 @@ import SignComplete from "@/components/steps/Step3-SignComplete";
 import LastThing from "@/components/steps/Step4-LastThing";
 import { NEXT_BUTTON_HELPERS } from "@/libs/doms";
 import ThankYou from "@/components/steps/Step5-ThankYou";
+import StepAlert from "@/components/StepAlert";
 
 const Header = dynamic(() => import("@/components/Header"), {
   ssr: false,
@@ -50,6 +51,10 @@ export default function Claim() {
               {step < STEP.LAST_THING && (
                 <ProgressBar step={step} prevStep={prevStep} />
               )}
+              {(step == STEP.LAST_THING || step == STEP.THANK_YOU) && (
+                <StepAlert step={step} />
+              )}
+
               <Title step={step} />
 
               {step == STEP.QUICK_QUOTE && <QuickQuote />}
