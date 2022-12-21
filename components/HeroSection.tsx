@@ -160,7 +160,7 @@ const HeroSection = () => {
                 Have you worked from home for a single day or more during the
                 pandemic?
               </p>
-              <div className="max-w-2xl flex space-x-2 select-none">
+              <div className="grid gap-5 sm:grid-cols-2 select-none">
                 <div className="flex items-center px-4 rounded border border-gray-200 dark:border-gray-700 cursor-pointer">
                   <input
                     id="bordered-checkbox-1"
