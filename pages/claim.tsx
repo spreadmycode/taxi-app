@@ -60,6 +60,7 @@ export default function Claim() {
 
               <NextButton
                 onClick={nextStep}
+                label={step == STEP.THANK_YOU ? "Submit" : "Next"}
                 helper={NEXT_BUTTON_HELPERS[step]}
               />
             </div>

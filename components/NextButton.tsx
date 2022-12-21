@@ -1,9 +1,10 @@
 type Props = {
   onClick: any;
+  label?: string;
   helper?: string;
 };
 
-const NextButton = ({ onClick, helper = "" }: Props) => {
+const NextButton = ({ onClick, label = "Next", helper = "" }: Props) => {
   return (
     <div className="w-full text-gray-500 mt-10 mb-8 md:mb-24">
       <ul className="grid gap-6 w-full md:grid-cols-2">
@@ -15,7 +16,7 @@ const NextButton = ({ onClick, helper = "" }: Props) => {
             >
               <div className="flex-grow">
                 <div className="w-full flex flex-row justify-center items-center text-2xl font-semibold">
-                  <span>Next</span>
+                  <span>{label}</span>
                 </div>
               </div>
               <svg
