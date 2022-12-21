@@ -6,7 +6,7 @@ const LastThing = () => {
           htmlFor="insurance"
           className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
         >
-          Your National Insurance Number
+          National Insurance (NI) number
         </label>
         <div className="flex">
           <span className="inline-flex flex-col justify-center items-center px-4 text-[8px] text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
@@ -38,10 +38,8 @@ const LastThing = () => {
           id="helper-text-explanation"
           className="mt-2 text-sm text-gray-500 dark:text-gray-400"
         >
-          HMRC will require your National Insurance number to identify you on
-          their records. Your national insurance number can be found on any
-          payslips that you receive, or other employment related documents such
-          as P60
+          You can find your NI number on your payslip, P60, or any letters sent
+          to you by HMRC relating to tax and benefits.
         </p>
       </div>
     </div>

@@ -6,7 +6,7 @@ export const TITLES = [
   "Quick quote",
   "Claim now",
   "Sign & complete",
-  "Last thing!",
+  "One more thing!",
   "Lastly!",
   "You're all done.",
 ];
@@ -25,7 +25,7 @@ export const SUB_TITLES = [
     </Link>
     &nbsp;and the following statements, before Signing
   </span>,
-  "Thank you. We just need the following to start your claim",
+  "We need your National Insurance (NI) number to submit your claim",
   "We also need your Employers PAYE Number to submit your claim",
   "Your PAYE information has been received",
 ];
