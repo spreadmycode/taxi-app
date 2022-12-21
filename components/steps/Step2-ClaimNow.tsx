@@ -17,7 +17,7 @@ const ClaimNow = () => {
           required
         />
         <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-          Please write your employer's name as it appears on your payslip
+          Please write your employer&apos;s name as it appears on your payslip
         </p>
       </div>
       <div className="md:col-span-2">
@@ -36,7 +36,7 @@ const ClaimNow = () => {
           required
         />
         <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-          Please write your employer's name as it appears on your payslip
+          Please write your employer&apos;s name as it appears on your payslip
         </p>
       </div>
       <div className="md:col-span-2">
