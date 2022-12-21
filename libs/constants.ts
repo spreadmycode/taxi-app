@@ -12,4 +12,5 @@ export enum STEP {
   LAST_THING,
   THANK_YOU,
   ALL_DONE,
+  ERROR,
 }

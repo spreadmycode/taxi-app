@@ -9,6 +9,7 @@ export const TITLES = [
   "One more thing!",
   "Lastly!",
   "You're all done.",
+  "Apologies, we are unable to proceed",
 ];
 
 export const SUB_TITLES = [
@@ -28,6 +29,7 @@ export const SUB_TITLES = [
   "We need your National Insurance (NI) number to submit your claim",
   "We also need your Employers PAYE Number to submit your claim",
   "Your PAYE information has been received",
+  "Due to the Pandemic, the government asked the workforce to work from home (WFH) whenever possible. All UK taxpayers may be eligible to claim the full 312 WFH allowance since 6 April 2020, provided they have worked a minimum of one day from home (per year).",
 ];
 
 export const CONFIRMS = [
@@ -38,11 +40,19 @@ export const CONFIRMS = [
   "I have read the tax claim documents, agree to the terms of engagement and understand that the information I have provided and my signature will be used to populate a claim form(s) to be sent to HMRC",
 ];
 
+export const ERRORS = [
+  "Even a single online / zoom meeting entitles you to claim the full allowance",
+  "Each household member can make a claim",
+  "No receipts are required",
+  "Includes house shares",
+];
+
 export const NEXT_BUTTON_HELPERS = [
   "",
   "",
   "",
   "",
   "When you click submit, we will receive your personal information and claim documents, to begin processing your tax refund claims. We will handle your data in accordance with our Privacy Policy.",
+  "",
   "",
 ];
