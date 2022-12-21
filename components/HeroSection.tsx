@@ -202,7 +202,7 @@ const HeroSection = () => {
               </p>
               <div className="max-w-2xl text-sm text-gray-500">
                 <ul className="grid gap-6 w-full md:grid-cols-2">
-                  <li>
+                  <li className="md:col-span-2">
                     <Link href="/claim">
                       <button className="inline-flex justify-between items-center p-5 w-full focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                         <div className="flex-grow">
