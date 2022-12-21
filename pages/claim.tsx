@@ -66,7 +66,7 @@ export default function Claim() {
                   <div>
                     <label
                       htmlFor="title"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      className="block mb-2 text-xl font-medium text-gray-900 dark:text-white"
                     >
                       Title
                     </label>
@@ -91,7 +91,7 @@ export default function Claim() {
                   <div>
                     <label
                       htmlFor="first-name"
-                      className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500"
+                      className="block mb-2 text-xl font-medium text-green-700 dark:text-green-500"
                     >
                       First Name
                     </label>
@@ -111,7 +111,7 @@ export default function Claim() {
                   <div>
                     <label
                       htmlFor="last-name"
-                      className="block mb-2 text-sm font-medium text-red-700 dark:text-red-500"
+                      className="block mb-2 text-xl font-medium text-red-700 dark:text-red-500"
                     >
                       Last Name
                     </label>
@@ -131,7 +131,7 @@ export default function Claim() {
                   <div className="md:col-span-2">
                     <label
                       htmlFor="mobile-number"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      className="block mb-2 text-xl font-medium text-gray-900 dark:text-white"
                     >
                       Mobile Telephone Number
                     </label>
@@ -172,7 +172,7 @@ export default function Claim() {
                   <div className="md:col-span-2">
                     <label
                       htmlFor="email"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      className="block mb-2 text-xl font-medium text-gray-900 dark:text-white"
                     >
                       Email Address
                     </label>
@@ -213,7 +213,7 @@ export default function Claim() {
                   <div className="md:col-span-2">
                     <label
                       htmlFor="address"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      className="block mb-2 text-xl font-medium text-gray-900 dark:text-white"
                     >
                       What is your current address?
                     </label>
@@ -262,7 +262,7 @@ export default function Claim() {
                   <div className="w-full mb-2">
                     <label
                       htmlFor="birthday"
-                      className="block text-sm font-medium text-gray-900 dark:text-white"
+                      className="block text-xl font-medium text-gray-900 dark:text-white"
                     >
                       Date of Birth
                     </label>
