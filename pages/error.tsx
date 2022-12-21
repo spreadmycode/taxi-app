@@ -43,8 +43,6 @@ export default function Error() {
               <NextButton onClick={restart} label="Restart application" />
             </div>
           </div>
-
-          <SidePanel />
         </div>
       </section>
 
