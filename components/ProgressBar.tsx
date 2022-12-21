@@ -11,7 +11,7 @@ const ProgressBar = ({ step, prevStep }: Props) => {
     <div className="w-full pt-4 mx-auto text-center lg:pt-8">
       <div className="flex justify-between items-center mb-1">
         <button
-          className="inline-flex items-center text-base font-medium text-blue-700 dark:text-white"
+          className="inline-flex items-center text-sm font-medium text-blue-700 dark:text-white"
           onClick={() => prevStep()}
         >
           <svg
