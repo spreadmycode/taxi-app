@@ -8,34 +8,15 @@ const ClaimNow = () => {
     <div className="grid gap-5 mt-6 mb-5 sm:grid-cols-2">
       <div className="sm:col-span-2">
         <label
-          htmlFor="employer1"
+          htmlFor="employer"
           className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
         >
-          What was the name of your employer between 2020 - 21?
+          What was the name of your employer?
         </label>
         <input
           type="text"
-          name="employer1"
-          id="employer1"
-          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-lg rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-          placeholder="Name Of Employer"
-          required
-        />
-        <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-          Please write your employer&apos;s name as it appears on your payslip
-        </p>
-      </div>
-      <div className="sm:col-span-2">
-        <label
-          htmlFor="employer2"
-          className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
-        >
-          What was the name of your employer between 2021 - 22?
-        </label>
-        <input
-          type="text"
-          name="employer2"
-          id="employer2"
+          name="employer"
+          id="employer"
           className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-lg rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
           placeholder="Name Of Employer"
           required
