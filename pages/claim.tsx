@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
-import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
 import { STEP } from "@/libs/constants";
 import Title from "@/components/Title";
@@ -17,7 +16,7 @@ import ThankYou from "@/components/steps/Step5-ThankYou";
 import StepAlert from "@/components/StepAlert";
 import AllDone from "@/components/steps/Step6-AllDone";
 
-const Header = dynamic(() => import("@/components/Header"), {
+const Layout = dynamic(() => import("@/components/Layout"), {
   ssr: false,
 });
 
@@ -42,9 +41,7 @@ export default function Claim() {
   };
 
   return (
-    <main className="bg-white dark:bg-gray-900">
-      <Header />
-
+    <Layout>
       <section className="bg-white dark:bg-gray-900">
         <div className="max-w-screen-xl mx-auto lg:flex gap-2">
           <div className="flex items-start mx-auto md:w-[42rem] px-4 md:px-8 xl:px-0">
@@ -80,8 +77,6 @@ export default function Claim() {
       </section>
 
       <ReviewSection />
-
-      <Footer />
-    </main>
+    </Layout>
   );
 }
