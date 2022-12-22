@@ -33,7 +33,7 @@ const Layout = ({ children, ...customMeta }: LayoutProps) => {
   return (
     <div>
       <Head>
-        <link rel="icon" href="/favicon.png" key="favicon" />
+        <link rel="icon" href="/images/favicon.png" key="favicon" />
         <link rel="canonical" href={`${url}${asPath}`} key="canonical" />
 
         {/* Twitter */}

@@ -8,7 +8,11 @@ const Footer = () => {
           href="/"
           className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
         >
-          <img src="/favicon.png" className="mr-3 h-6 sm:h-9" alt="Logo" />
+          <img
+            src="/images/favicon.png"
+            className="mr-3 h-6 sm:h-9"
+            alt="Logo"
+          />
           <span>ClaimingMadeEasy™</span>
         </Link>
         <p className="my-6 max-w-2xl mx-auto  text-gray-500 dark:text-gray-400">

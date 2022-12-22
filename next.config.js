@@ -10,8 +10,9 @@ const nextConfig = {
           ? "https://taxiapplication.vercel.app"
           : "https://taxiapplication.vercel.app",
       title: "Claiming Made Easy",
-      description: "Claiming Made Easy",
-      socialPreview: "/logo.png",
+      description:
+        "ClaimingMadeEasy is a trading style of Approved Claims Group Ltd, a HMRC registered Tax Agent. We will handle and process your claim",
+      socialPreview: "/images/logo.png",
     },
   },
   images: {
