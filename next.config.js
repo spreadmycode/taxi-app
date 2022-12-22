@@ -7,7 +7,7 @@ const nextConfig = {
       name: "Claiming Made Easy",
       url:
         process.env.NODE_ENV === "development"
-          ? "http://localhost:3000"
+          ? "https://taxiapplication.vercel.app"
           : "https://taxiapplication.vercel.app",
       title: "Claiming Made Easy",
       description: "Claiming Made Easy",
