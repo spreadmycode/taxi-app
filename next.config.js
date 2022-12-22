@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   publicRuntimeConfig: {
     site: {
-      name: "Claiming Made Easy",
+      name: "ClaimingMadeEasy™ - Refund Tax Claim",
       url:
         process.env.NODE_ENV === "development"
           ? "https://taxiapplication.vercel.app"
