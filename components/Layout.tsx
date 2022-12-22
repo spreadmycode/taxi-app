@@ -2,7 +2,11 @@ import getConfig from "next/config";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Footer from "./Footer";
-import Header from "./Header";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("@/components/Header"), {
+  ssr: false,
+});
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -80,9 +84,6 @@ const Layout = ({ children, ...customMeta }: LayoutProps) => {
           <meta property="article:published_time" content={meta.date} />
         )}
         <title key="title">{meta.title}</title>
-
-        {/* Review Script */}
-        <script defer async src="https://cdn.trustindex.io/loader.js"></script>
       </Head>
 
       <Header />

@@ -1,14 +1,10 @@
 import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
 import { STEP } from "@/libs/constants";
 import Title from "@/components/Title";
 import NextButton from "@/components/NextButton";
 import ReviewSection from "@/components/ReviewSection";
 import ErrorContent from "@/components/steps/Step-Error";
-
-const Layout = dynamic(() => import("@/components/Layout"), {
-  ssr: false,
-});
+import Layout from "@/components/Layout";
 
 export default function Error() {
   const router = useRouter();

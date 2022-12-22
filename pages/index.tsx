@@ -1,10 +1,6 @@
-import dynamic from "next/dynamic";
 import HeroSection from "@/components/HeroSection";
 import ReviewSection from "@/components/ReviewSection";
-
-const Layout = dynamic(() => import("@/components/Layout"), {
-  ssr: false,
-});
+import Layout from "@/components/Layout";
 
 export default function Home() {
   return (

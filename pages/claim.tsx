@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
 import ProgressBar from "@/components/ProgressBar";
 import { STEP } from "@/libs/constants";
 import Title from "@/components/Title";
@@ -15,10 +14,7 @@ import { NEXT_BUTTON_HELPERS } from "@/libs/doms";
 import ThankYou from "@/components/steps/Step5-ThankYou";
 import StepAlert from "@/components/StepAlert";
 import AllDone from "@/components/steps/Step6-AllDone";
-
-const Layout = dynamic(() => import("@/components/Layout"), {
-  ssr: false,
-});
+import Layout from "@/components/Layout";
 
 export default function Claim() {
   const router = useRouter();

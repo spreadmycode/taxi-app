@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useThemeValue } from "@/contexts/ThemeContext";
 import { THEME } from "@/hooks/useTheme";
+import Head from "next/head";
 
 const Header = () => {
   const { theme, changeTheme } = useThemeValue();
@@ -15,6 +16,10 @@ const Header = () => {
 
   return (
     <header>
+      <Head>
+        {/* Review Script */}
+        <script defer async src="https://cdn.trustindex.io/loader.js"></script>
+      </Head>
       <nav className="bg-white border-gray-200 px-4 md:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link href="/" className="flex items-center">
