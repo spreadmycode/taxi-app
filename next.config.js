@@ -7,8 +7,8 @@ const nextConfig = {
       name: "ClaimingMadeEasy™ - Refund Tax Claim",
       url:
         process.env.NODE_ENV === "development"
-          ? "https://taxiapplication.vercel.app"
-          : "https://taxiapplication.vercel.app",
+          ? "https://claimingmadeeasy.vercel.app"
+          : "https://claimingmadeeasy.vercel.app",
       title: "Claiming Made Easy",
       description:
         "ClaimingMadeEasy is a trading style of Approved Claims Group Ltd, a HMRC registered Tax Agent. We will handle and process your claim",
@@ -17,7 +17,7 @@ const nextConfig = {
   },
   images: {
     domains: [
-      "taxiapplication.vercel.app",
+      "claimingmadeeasy.vercel.app",
       "work-from-home.vercel.app",
       "www.claimingmadeeasy.com",
       "countryflagsapi.com",
