@@ -4,12 +4,12 @@ const nextConfig = {
   swcMinify: true,
   publicRuntimeConfig: {
     site: {
-      name: "ClaimingMadeEasy™ - Refund Tax Claim",
+      name: "Claiming Made Easy",
       url:
         process.env.NODE_ENV === "development"
           ? "https://claimingmadeeasy.vercel.app"
           : "https://claimingmadeeasy.vercel.app",
-      title: "Claiming Made Easy",
+      title: "ClaimingMadeEasy™ - Refund Tax Claim",
       description:
         "ClaimingMadeEasy is a trading style of Approved Claims Group Ltd, a HMRC registered Tax Agent. We will handle and process your claim",
       socialPreview: "/images/logo.png",
