@@ -20,6 +20,8 @@ const nextConfig = {
       "taxiapplication.vercel.app",
       "work-from-home.vercel.app",
       "www.claimingmadeeasy.com",
+      "countryflagsapi.com",
+      "www.gravatar.com",
     ],
   },
 };
