@@ -68,10 +68,10 @@ const Layout = ({ children, ...customMeta }: LayoutProps) => {
           content={`${url}${socialPreview}`}
           key="og_image"
         />
-        <meta property="og:image:width" content={`847`} key="og_image_width" />
+        <meta property="og:image:width" content={`1200`} key="og_image_width" />
         <meta
           property="og:image:height"
-          content={`242`}
+          content={`630`}
           key="og_image_height"
         />
 
