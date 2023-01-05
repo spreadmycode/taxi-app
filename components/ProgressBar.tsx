@@ -28,7 +28,8 @@ const ProgressBar = ({ step, prevStep }: Props) => {
           </svg>
           Go back
         </button>
-        <span className="text-sm font-medium text-blue-700 dark:text-white">
+
+        <span className="text-sm font-medium text-blue-700 dark:text-white ml-auto">
           {PERCENTS[step]}% completed
         </span>
       </div>
